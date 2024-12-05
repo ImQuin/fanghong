@@ -16,11 +16,11 @@
     var isAndroid = ua.indexOf('android') != -1;
     var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
 
-    var notice_openBrowser = "<h2>请点击右上角🌍 通过浏览器打开本网页</h2>"
+    var notice_openBrowser = "<b>请点击右上角🌍 通过浏览器打开本页面</b>"
 
     // 判断是不是在微信客户端打开
     if(isWeixin || isQQ) {
-    // 判断是在Android的微信客户端还是IOS的微信客户端
+    // 判断是在Android的微信客户端还是Ios的微信客户端
     if (isAndroid) {
     document.getElementById("tips").innerHTML=notice_openBrowser;
     }else if (isIos) {
